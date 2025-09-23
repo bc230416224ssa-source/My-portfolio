@@ -1,0 +1,67 @@
+Day 1 - Step by Step (Roman Urdu)
+----------------------------------
+
+Goal: Aaj hum pehla simple web page banayenge aur use GitHub pe upload karenge (push).
+
+Files included:
+1) day1_index.html    => web page file (download karke apne folder mein rakho)
+2) day1_instructions.txt => yeh instructions (jo aap dekh rahe ho)
+
+Step 0 — Folder banao:
+- Computer pe ek folder banao: "my-portfolio" ya "WebDay1".
+- Example path (Windows): C:\Users\YourName\Documents\my-portfolio
+- Example (Mac/Linux): /home/yourname/my-portfolio
+
+Step 1 — VS Code install karo:
+1. Browser kholo aur "code.visualstudio.com" pe jao, apne OS ke liye download karo.
+2. Install kar lo. Phir VS Code kholo.
+3. VS Code me: File -> Open Folder -> apna my-portfolio folder choose karo.
+4. Agar aap ne index.html file download kiye, to us file ko is folder me copy/paste karo.
+5. VS Code me left side se file open karo.
+
+Step 2 — index.html file kaise open karo:
+- File Explorer me folder kholo aur index.html file pe double-click karo — browser me khul jayega.
+- Ya VS Code me "Live Server" extension install karo (Extensions icon -> Search "Live Server") -> file pe right-click -> Open with Live Server (auto refresh hota hai).
+
+Step 3 — Git install karo:
+1. Browser me "git-scm.com" pe jao, apne OS ke liye download karo aur install karo.
+2. Install ke baad terminal/command prompt khol ke check karo:
+   git --version
+   Agar version nazar aaye to install theek hai.
+
+Step 4 — GitHub account & repo banao:
+1. Browser me "github.com" pe jao aur account banao (Sign up).
+2. Login karne ke baad: "New repository" button pe click karo.
+3. Repo name: my-portfolio
+4. Public rakho (ya private agar chaho). "Initialize this repository with a README" ko unchecked chorhna theek hota hai agar aap local se push kar rahe ho.
+5. Create repository pe click karo.
+
+Step 5 — Local folder ko Git se connect karke push karo (VS Code terminal me):
+1. VS Code me terminal open karo: Ctrl + ` (backtick)
+2. Terminal me ye commands chalao (ek-ek line enter karo):
+
+   git init
+   git add .
+   git commit -m "Day1: add index.html"
+   git branch -M main
+   git remote add origin https://github.com/YOURUSERNAME/my-portfolio.git
+   git push -u origin main
+
+- NOTE: "YOURUSERNAME" ko apne GitHub username se replace karo.
+- Agar push ke waqt username/password mange to apna GitHub username aur password ya Personal Access Token (PAT) use karo.
+- Agar koi error aye to mujhe batao — main help kar dunga step-by-step.
+
+Step 6 — Browser me check karo:
+- GitHub pe apni repo kholo (https://github.com/YOURUSERNAME/my-portfolio) — wahan index.html dikhna chahiye (agar aapne commit & push kiya).
+- Local me index.html ko browser me open karke dekho — page simple text dikhayega.
+
+Common problems & quick fixes (Roman Urdu):
+- "git not found": Git install karo aur terminal restart karo.
+- "Permission denied" push karte hue: remote URL sahi hai ya nahi check karo, ya GitHub me login karke token banao.
+- Changes show nahin ho rahi: file save karo (Ctrl+S) aur browser refresh karo.
+
+Done hone ke baad:
+- Jab aap file open kar lo aur step complete ho jaye to chat me likho: "Done Day 1".
+- Main check karunga aur agla step bata dunga (Day 2: headings, images, lists).
+
+Agar aap chaho main yahan se bhi aap ko terminal commands copy paste kar ke doon ya screen-by-screen guide doon to bolo.
